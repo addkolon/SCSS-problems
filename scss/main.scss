@@ -1,0 +1,95 @@
+// Denna kommentaren kommer inte att kompileras
+/* Denna kommentaren komemr att kompileras */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// PROBLEM 1
+// $primary-color: rgb(73, 207, 158);
+$primary-color: deeppink;
+$secondary-color: gray;
+$alert-color: red;
+$success-color: lime;
+$info-color: blue;
+
+h1 {
+  color: $primary-color;
+}
+
+.box {
+  background-color: $primary-color;
+
+  width: 380px;
+  height: 540px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 2rem;
+}
+
+button {
+  background-color: $primary-color;
+
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+}
+
+
+// PROBLEM 2
+
+header { // <header>
+  background-color: $primary-color;
+  margin-bottom: 2rem;
+
+  nav { // <nav>
+    
+    ul { // <ul>
+      list-style: none;
+      display: flex;
+
+      li { // <li>
+        padding: 1rem 2rem;
+
+        &:hover {
+          background-color: beige;
+        }
+      } // </li>
+    } // </ul>
+  } // </nav>
+} // </header>
+
+.button {
+  background-color: $secondary-color;
+  color: black;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  display: inline-block;
+
+  &.primary {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &.alert {
+    background-color: $alert-color;
+    color: white;
+  }
+
+  &.success {
+    background-color: $success-color;
+    color: white;
+  }
+
+  &.info {
+    background-color: $info-color;
+    color: white;
+  }
+}

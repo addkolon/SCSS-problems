@@ -1,0 +1,68 @@
+/* Denna kommentaren komemr att kompileras */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: deeppink;
+}
+
+.box {
+  background-color: deeppink;
+  width: 380px;
+  height: 540px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+button {
+  background-color: deeppink;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border: 2px solid white;
+}
+
+header {
+  background-color: deeppink;
+  margin-bottom: 2rem;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  padding: 1rem 2rem;
+}
+header nav ul li:hover {
+  background-color: beige;
+}
+
+.button {
+  background-color: gray;
+  color: black;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  display: inline-block;
+}
+.button.primary {
+  background-color: deeppink;
+  color: white;
+}
+.button.alert {
+  background-color: red;
+  color: white;
+}
+.button.success {
+  background-color: lime;
+  color: white;
+}
+.button.info {
+  background-color: blue;
+  color: white;
+}/*# sourceMappingURL=main.css.map */
