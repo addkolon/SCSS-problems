@@ -15,8 +15,26 @@ $alert-color: red;
 $success-color: lime;
 $info-color: blue;
 
+// PADDINGS AND MARGINGS
+$base-padding: 2rem;
+$base-margin: 1rem;
+$base-border-radius: .5rem;
+
+$base-font-size: 1rem;
+
 h1 {
   color: $primary-color;
+  font-size: calc($base-font-size * 3);
+}
+
+h2 {
+  color: $primary-color;
+  font-size: calc($base-font-size * 2.5);
+}
+
+h3 {
+  color: $primary-color;
+  font-size: calc($base-font-size * 2);
 }
 
 .box {
@@ -32,13 +50,13 @@ h1 {
   padding: 2rem;
 }
 
-button {
-  background-color: $primary-color;
+// button {
+//   background-color: $primary-color;
 
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  border: 2px solid white;
-}
+//   margin-top: 2rem;
+//   padding: 1rem 2rem;
+//   border: 2px solid white;
+// }
 
 
 // PROBLEM 2
@@ -92,4 +110,34 @@ header { // <header>
     background-color: $info-color;
     color: white;
   }
+}
+
+@mixin kaksmet($bg-color, $text-color, $border-radius) {
+  //Grund recept
+  padding: calc($base-padding / 2) $base-padding;
+  font-size: 1.25rem;
+
+  // Justera utifrån vilken muffins vi vill göra
+  background-color: $bg-color;
+  color: $text-color;
+  border-radius: $border-radius;
+}
+
+.blueberry {
+  @include kaksmet(#f4eba1, #1e1e74, calc($base-border-radius * 2))
+}
+
+.chocolate {
+  @include kaksmet(#362828, #8b6e63, calc($base-border-radius / 2))
+}
+
+.vanilla {
+  @include kaksmet(rgb(244, 235, 161), rgb(184, 53, 53), $base-border-radius)
+}
+
+.hallon {
+  @include kaksmet(yellow, deeppink, 5rem);
+  border: 6px solid deeppink;
+  text-transform: uppercase;
+  font-weight: bold;
 }

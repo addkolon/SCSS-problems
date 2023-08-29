@@ -7,6 +7,17 @@
 
 h1 {
   color: deeppink;
+  font-size: 3rem;
+}
+
+h2 {
+  color: deeppink;
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: deeppink;
+  font-size: 2rem;
 }
 
 .box {
@@ -17,13 +28,6 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-}
-
-button {
-  background-color: deeppink;
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  border: 2px solid white;
 }
 
 header {
@@ -65,4 +69,39 @@ header nav ul li:hover {
 .button.info {
   background-color: blue;
   color: white;
+}
+
+.blueberry {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: #f4eba1;
+  color: #1e1e74;
+  border-radius: 1rem;
+}
+
+.chocolate {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: #362828;
+  color: #8b6e63;
+  border-radius: 0.25rem;
+}
+
+.vanilla {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: rgb(244, 235, 161);
+  color: rgb(184, 53, 53);
+  border-radius: 0.5rem;
+}
+
+.hallon {
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  background-color: yellow;
+  color: deeppink;
+  border-radius: 5rem;
+  border: 6px solid deeppink;
+  text-transform: uppercase;
+  font-weight: bold;
 }/*# sourceMappingURL=main.css.map */
