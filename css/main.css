@@ -104,4 +104,27 @@ header nav ul li:hover {
   border: 6px solid deeppink;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+p {
+  font-size: 13px;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+h2.base {
+  color: #1c1c1c;
+}
+h2.secondary {
+  color: orange;
+}
+h2.third {
+  color: purple;
 }/*# sourceMappingURL=main.css.map */

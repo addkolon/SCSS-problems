@@ -1,6 +1,8 @@
 // Denna kommentaren kommer inte att kompileras
 /* Denna kommentaren komemr att kompileras */
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -82,6 +84,7 @@ header { // <header>
   } // </nav>
 } // </header>
 
+
 .button {
   background-color: $secondary-color;
   color: black;
@@ -112,6 +115,8 @@ header { // <header>
   }
 }
 
+// Problem 3
+
 @mixin kaksmet($bg-color, $text-color, $border-radius) {
   //Grund recept
   padding: calc($base-padding / 2) $base-padding;
@@ -140,4 +145,33 @@ header { // <header>
   border: 6px solid deeppink;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+// Problem 4
+
+p {
+  font-size: 13px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+@import "utils/variables";
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+
+  &.base {
+    color: $base-color;
+  }
+
+  &.secondary {
+    color: $secondary-color;
+  }
+
+  &.third {
+    color: $third-color;
+  }
 }
